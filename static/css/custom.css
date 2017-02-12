@@ -39,6 +39,7 @@ ul > li > a{
   border-color: #93c47d;
   color: #93c47d;
   text-transform: uppercase;
+  border-color: #93c47d;
 }
 
 .green:hover,
@@ -47,15 +48,15 @@ ul > li > a{
   color: white;
 }
 
-#first > div > div > a{
+.btn-cta{
   border-color: #93c47d;
   color: #93c47d;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-#first > div > div > a:hover,
-#first > div > div > a:focus
+.btn-cta:hover,
+.btn-cta:focus
 {
   border-color: #93c47d;
   color: white;
