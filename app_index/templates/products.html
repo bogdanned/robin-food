@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>{{ customer.name }}</h3>
+      <h3>{{ customer.email }}</h3>
+      <h3>{{ customer.address }}</hs3>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {% for product in products %}
+    <div class="row row-product">
+      <div class="col-md-2">
+        {% if product.image %}
+          <img class="img-product" src="{{MEDIA_URL}}{{product.image.url}}" />
+        {% else %}
+          <img class="img-product" src="{% static 'default.png' %}" />
+        {% endif %}
+      </div>
+      <div class="col-md-10">
+        <span>{{product.name}}</span>
+        <span>Precio: {{product.price}} €</span>
+        <p>
+          {{ product.description }}
+        </p>
+        <span>Cantidad Disponible: {{product.price}}</span>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-primary btn-product">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

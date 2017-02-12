@@ -1,0 +1,86 @@
+/*
+green #93c47d
+
+*/
+
+p{
+  font-size: 10px;
+}
+
+header{
+  background-image: url('../img/back_3.jpg');
+  background-size: cover;
+}
+
+
+.inner{
+  position: absolute !important;
+  top: 12rem !important;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+
+.green{
+  border-color: #93c47d;
+  color: #93c47d;
+  text-transform: uppercase;
+}
+
+.green:hover,
+.green:focus{
+  background-color: #93c47d;
+  color: white;
+}
+
+#first > div > div > a{
+  border-color: #93c47d;
+  color: #93c47d;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#first > div > div > a:hover,
+#first > div > div > a:focus
+{
+  border-color: #93c47d;
+  color: white;
+  background-color: #93c47d;
+}
+
+
+#topNav > div > a{
+  color: #93c47d;
+}
+
+#collapsingNavbar > ul > li> a{
+  color: #93c47d;
+}
+
+
+/* Card Row */
+.row-card{
+  background-color: white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+
+.img-product{
+  height: 100px;
+  width: 100px;
+}
+
+.row-product{
+  background-color: white;
+  height: 100px;
+}
+
+
+.btn-product{
+  float: right;
+  top: -40px;
+
+}
