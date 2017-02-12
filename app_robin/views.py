@@ -12,8 +12,8 @@ def indexView(request):
 
 def productsView(request):
 
-    customer = Customer.objects.get(pk=1)
-    products = modelProduct.objects.all()
+    customer = newCustomer.objects.get(pk=1)
+    products = newProduct.objects.all()
 
     print(customer.name)
     context = {

@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^', include("app_index.urls")),
+    url(r'^', include("app_robin.urls")),
 ]
 
 # Media URL

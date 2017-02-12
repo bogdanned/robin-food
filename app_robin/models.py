@@ -4,7 +4,7 @@ from django.db import models
 
 # Create your models here.
 
-class Customer(models.Model):
+class newCustomer(models.Model):
     created = models.DateTimeField(auto_now=False, auto_now_add=True, blank = False, null = False, verbose_name = 'Creation Date')
     name = models.CharField(max_length = 400, null=True, blank = True, verbose_name = 'Name')
     email = models.EmailField(max_length=254, blank=True, null=True)
@@ -15,7 +15,7 @@ class Customer(models.Model):
     description = models.CharField(max_length = 5000, null=True, blank = True, verbose_name = 'Description')
 
 
-class modelProduct(models.Model):
+class newProduct(models.Model):
     created = models.DateTimeField(auto_now=False, auto_now_add=True, blank = False, null = False, verbose_name = 'Creation Date')
     name = models.CharField(max_length = 400, null=True, blank = True, verbose_name = 'Nombre')
     quantity = models.IntegerField(blank = False, null = False, verbose_name = 'Cantidad')

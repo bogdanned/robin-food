@@ -7,5 +7,5 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ['quantity']
     list_filter = ['supermercado']
 
-admin.site.register(Customer)
-admin.site.register(modelProduct, ProductAdmin)
+admin.site.register(newCustomer)
+admin.site.register(newProduct, ProductAdmin)
