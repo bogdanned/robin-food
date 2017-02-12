@@ -9,6 +9,7 @@ local_settings.py
 db.sqlite3
 media
 robin/wsgi.py
+wsgi.py
 
 ### macOS ###
 *.DS_Store
