@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('created', models.DateTimeField(auto_now_add=True, verbose_name='Creation Date')),
                 ('name', models.CharField(blank=True, max_length=400, null=True, verbose_name='Adress')),
-                ('quantity', models.IntegerField(auto_now=True, verbose_name='Updated')),
+                ('quantity', models.IntegerField(verbose_name='Updated')),
                 ('price', models.URLField(blank=True, null=True)),
             ],
         ),
