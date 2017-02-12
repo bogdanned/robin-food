@@ -1,0 +1,33 @@
+{% load static %}
+{% load staticfiles %}
+<div class="row">
+  {% for product in products %}
+  <div class="col-md-12 col-prod">
+    <div class="row row-product prod-card">
+      <div class="col-md-4">
+        {% if product.image %}
+          <img class="img-product" src="{{MEDIA_URL}}{{product.image.url}}" />
+        {% else %}
+          <img class="img-product" src="{% static 'default.png' %}" />
+        {% endif %}
+      </div>
+      <div class="col-md-8" style="padding-top: 12px;">
+        <span class="p-name">{{product.name}}</span>
+        <p class="p-des" style="margin-bottom: 5px;">
+          {{ product.description }}
+        </p>
+        <span class="p-price">Precio: {{product.price}} €/bolsa</span>
+        <p class="p-cant">Cantidad Disponible: {{product.quantity}}</p>
+        <div class="row">
+          <form class="form-inline form-class">
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+              <div class="input-group-addon">Cantidad</div>
+              <input type="text" class="form-control form-quant" id="inlineFormInputGroup" placeholder="1">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
