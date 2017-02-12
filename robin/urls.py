@@ -17,12 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls.defaults import *
-
-# This two if you want to enable the Django Admin: (recommended)
-from django.contrib import admin
-admin.autodiscover()
-
 
 urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
