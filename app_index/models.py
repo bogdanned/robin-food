@@ -15,7 +15,7 @@ class Customer(models.Model):
     description = models.CharField(max_length = 5000, null=True, blank = True, verbose_name = 'Description')
 
 
-class Product(models.Model):
+class modelProduct(models.Model):
     created = models.DateTimeField(auto_now=False, auto_now_add=True, blank = False, null = False, verbose_name = 'Creation Date')
     name = models.CharField(max_length = 400, null=True, blank = True, verbose_name = 'Nombre')
     quantity = models.IntegerField(blank = False, null = False, verbose_name = 'Cantidad')

@@ -8,4 +8,4 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ['supermercado']
 
 admin.site.register(Customer)
-admin.site.register(Product, ProductAdmin)
+admin.site.register(modelProduct, ProductAdmin)

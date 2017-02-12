@@ -13,7 +13,7 @@ def indexView(request):
 def productsView(request):
 
     customer = Customer.objects.get(pk=1)
-    products = Product.objects.all()
+    products = modelProduct.objects.all()
 
     print(customer.name)
     context = {
