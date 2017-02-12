@@ -7,10 +7,6 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('app_index', '0003_auto_20170212_1012'),
-    ]
-
     operations = [
         migrations.RenameField(
             model_name='customer',
