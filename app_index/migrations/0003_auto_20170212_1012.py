@@ -10,11 +10,3 @@ class Migration(migrations.Migration):
     dependencies = [
         ('app_index', '0002_auto_20170212_1011'),
     ]
-
-    operations = [
-        migrations.AlterField(
-            model_name='product',
-            name='price',
-            field=models.IntegerField(blank=True, null=True),
-        ),
-    ]
